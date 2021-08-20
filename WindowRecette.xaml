@@ -1,0 +1,46 @@
+﻿<Window x:Class="Appli.WindowRecette"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Appli"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        mc:Ignorable="d"
+        Title="WindowRecette" Height="450" Width="589">
+    <Grid Background="#FF7A7A7A">
+        <ListView x:Name="RecetteList" ItemsSource="{Binding observableCollection}" HorizontalAlignment="Left" Height="325" Margin="30,70,0,0" VerticalAlignment="Top" Width="230" Background="#FFC1C1C1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Mois" DisplayMemberBinding="{Binding mois}"/>
+                    <GridViewColumn Header="Année" DisplayMemberBinding="{Binding annee}"/>
+                    <GridViewColumn Header="Recette" DisplayMemberBinding="{Binding prix}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Recherche par mois" HorizontalAlignment="Left" Margin="30,25,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="tbmois" HorizontalAlignment="Left" Height="23" Margin="600,84,-139,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbannee" HorizontalAlignment="Left" Height="23" Margin="370,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="{x:Null}"/>
+        <TextBox x:Name="tbrecette" HorizontalAlignment="Left" Height="23" Margin="370,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="{x:Null}"/>
+        <TextBox x:Name="tbid" HorizontalAlignment="Left" Height="23" Margin="600,112,-69,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.458"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Mois" HorizontalAlignment="Left" Margin="282,81,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Année" HorizontalAlignment="Left" Margin="282,131,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Recette" HorizontalAlignment="Left" Margin="282,181,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button Click="bt_add" Content="Ajouter" HorizontalAlignment="Left" Margin="300,240,0,0" VerticalAlignment="Top" Width="75" Background="#FF008BFF" Foreground="White" BorderBrush="White" Height="22"/>
+        <Button Click="editUpdate" Content="Modifier" HorizontalAlignment="Left" Margin="300,299,0,0" VerticalAlignment="Top" Width="75" Background="#FF008BFF" Foreground="White" BorderBrush="White" Height="23"/>
+        <Button Click="Suppr" Content="Supprimer" HorizontalAlignment="Left" Margin="300,355,0,0" VerticalAlignment="Top" Width="75" Background="#FF008BFF" Foreground="White" BorderBrush="White" Height="23"/>
+        <ComboBox x:Name="combomois" HorizontalAlignment="Left" Margin="160,29,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combomois_SelectionChanged" Background="#FF7A7A7A"/>
+        <Label Content="Recherche par année" HorizontalAlignment="Left" Margin="300,25,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="tbfannee" HorizontalAlignment="Left" Height="23" Margin="440,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="tbfannee_TextChanged" Background="{x:Null}"/>
+        <ComboBox x:Name="combomois2" HorizontalAlignment="Left" Margin="370,85,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

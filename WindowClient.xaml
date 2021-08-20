@@ -1,0 +1,43 @@
+﻿<Window x:Class="Appli.WindowClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Appli"
+        mc:Ignorable="d"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="WindowClient" Height="450" Width="800">
+    <Grid Background="#FF7A7A7A">
+        <ListView x:Name="ClientList" ItemsSource="{Binding observableCollection}" HorizontalAlignment="Left" Height="158" Margin="25,52,0,0" VerticalAlignment="Top" Width="730" Background="#FFC1C1C1" Foreground="Black">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nom entreprise" DisplayMemberBinding="{Binding nom_entreprise}"/>
+                    <GridViewColumn Header="Nom client" DisplayMemberBinding="{Binding nom_client}"/>
+                    <GridViewColumn Header="Prenom client" DisplayMemberBinding="{Binding prenom_client}"/>
+                    <GridViewColumn Header="Email client" DisplayMemberBinding="{Binding email_client}"/>
+                    <GridViewColumn Header="Raison client" DisplayMemberBinding="{Binding raison_sociale}"/>
+                    <GridViewColumn Header="Telephone client" DisplayMemberBinding="{Binding telephone_client}"/>
+                    <GridViewColumn Header="Adresse client" DisplayMemberBinding="{Binding adresse_client}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox x:Name="tbNom_entreprise" HorizontalAlignment="Left" Height="23" Margin="140,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="tbNom_entreprise_TextChanged" Background="{x:Null}" Foreground="White"  />
+        <TextBox x:Name="tbNom_client" HorizontalAlignment="Left" Height="23" Margin="140,287,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="White"/>
+        <TextBox x:Name="tbPrenom_client" HorizontalAlignment="Left" Height="23" Margin="140,331,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="White"/>
+        <TextBox x:Name="tbEmail_client" HorizontalAlignment="Left" Height="23" Margin="407,287,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="White"/>
+        <TextBox x:Name="tbRaison_client" HorizontalAlignment="Left" Height="23" Margin="407,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="White"/>
+        <TextBox x:Name="tbTelephone_client" HorizontalAlignment="Left" Height="23" Margin="648,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="White"/>
+        <TextBox x:Name="tbAdresse_client" HorizontalAlignment="Left" Height="23" Margin="407,334,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="White"/>
+        <Button Click="bt_add" x:Name="Bt_add_client" Content="Ajouter un client" HorizontalAlignment="Left" Margin="595,287,0,0" VerticalAlignment="Top" Width="120" Height="23" Foreground="White" Background="#FF008BFF" BorderBrush="White"/>
+        <TextBox x:Name="tbId_client" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="40" Margin="-80,267,0,0" RenderTransformOrigin="0.492,2.739"/>
+        <Button Click="editUpdate" Content="Modifier" HorizontalAlignment="Left" Margin="595,324,0,0" VerticalAlignment="Top" Width="120" Height="23" Foreground="White" Background="#FF008BFF" BorderBrush="White"/>
+        <Button Click="Suppr" Content="Supprimer" HorizontalAlignment="Left" Margin="595,360,0,0" VerticalAlignment="Top" Width="120" Height="23" Foreground="White" Background="#FF008BFF" BorderBrush="White"/>
+        <Label Content="Nom entreprise&#xD;&#xA;" HorizontalAlignment="Left" Margin="25,238,0,0" VerticalAlignment="Top" Height="27" Foreground="White"/>
+        <Label Content="Nom client" HorizontalAlignment="Left" Margin="25,283,0,0" VerticalAlignment="Top" Height="27" Foreground="White"/>
+        <Label Content="Prenom" HorizontalAlignment="Left" Margin="25,327,0,0" VerticalAlignment="Top" Height="27" Foreground="White"/>
+        <Label Content="Raison sociale" HorizontalAlignment="Left" Margin="291,238,0,0" VerticalAlignment="Top" Height="27" Foreground="White"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="291,283,0,0" VerticalAlignment="Top" Height="27" Foreground="White"/>
+        <Label Content="Adresse postal" HorizontalAlignment="Left" Margin="291,331,0,0" VerticalAlignment="Top" Height="27" Foreground="White"/>
+        <Label Content="Telephone" HorizontalAlignment="Left" Margin="558,238,0,0" VerticalAlignment="Top" Height="27" Foreground="White"/>
+    </Grid>
+</Window>

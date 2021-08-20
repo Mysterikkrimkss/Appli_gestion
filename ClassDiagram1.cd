@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Appli.CRUD_Client">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAEAAAAAIAAAAAAAAAAgAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Controllers\CRUD_Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Appli.Client">
+    <Position X="4" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAQAAAgAAAAAAIAAAAAAgAAAAgAAAAAAgAgAAAAA=</HashCode>
+      <FileName>Controllers\CRUD_Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Appli.CRUD_Document">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAkAAAAAAAAAAAAAEACAAACAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\CRUD_Document.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Appli.Document">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIIAEAAAAAAAAAAAAAAAEAgAAACA=</HashCode>
+      <FileName>Controllers\CRUD_Document.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Appli.CRUD_Login">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\CRUD_Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Appli.Login">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgACEAA=</HashCode>
+      <FileName>Controllers\CRUD_Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Appli.CRUD_Mission">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAACAAAAAAAAAAAACAAEAAAAAAA=</HashCode>
+      <FileName>Controllers\CRUD_Mission.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Appli.Mission">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAEAAAAACAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Controllers\CRUD_Mission.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Appli.CRUD_Recette">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAEg=</HashCode>
+      <FileName>Controllers\CRUD_Recette.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Appli.Recette">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAACAAAAAAAAAAAAAAAAAAAIEAAAA=</HashCode>
+      <FileName>Controllers\CRUD_Recette.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
